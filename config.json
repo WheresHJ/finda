@@ -25,7 +25,6 @@
   },
   "properties": {
     "Program Name": {},
-  
     "Address1": {},
     "Address2": {},
     "City": {},
@@ -34,6 +33,11 @@
     "eMailAddress": {},
     "Capacity": {"title": "Capacity"},
     "Program Type": {"title": "Program Type"}
+  },
+  "list": {
+    "Program Name": {},
+    "Address1": {},
+    "Address2": {}
   },
   "search": {
     "geosearch": true

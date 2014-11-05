@@ -32,6 +32,12 @@ define(function(require, exports, module) {
 
     this.configureMap = function(ev, config) {
       var mapConfig = config.map;
+
+      // if facets are emabled, give the map less space
+      if (config.facets) {
+        this.$node.css('left', '+=300');
+      }
+
       this.map.setView(mapConfig.center, mapConfig.zoom);
       if (mapConfig.maxZoom){
         this.map.options.maxZoom = mapConfig.maxZoom;

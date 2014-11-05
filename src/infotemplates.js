@@ -8,7 +8,7 @@ define(function(require, exports) {
       title: Handlebars.compile('<div><h4>{{title}}</h4><div>{{{rendered}}} </div></div>'),
       list: Handlebars.compile('<ul> {{#list}} <li>{{{this}}}</li> {{/list}} </ul>'),
       simple: Handlebars.compile('{{text}}'),
-      popup: Handlebars.compile('<div>{{#popup}}<div id="{{div_id}}">{{{rendered}}}</div>{{/popup}}</div>')
+      popup: Handlebars.compile('<div>{{#popup}}<div id="{{div_id}}" class="feature-{{div_id}}">{{{rendered}}}</div>{{/popup}}</div>')
     },
         formatters = {
           url: function(value, property) {
@@ -70,7 +70,7 @@ define(function(require, exports) {
             rendered = format(value, property);
             if (rendered) {
               popup.push({
-                div_id: key,
+                div_id: key.replace(' ', '-'),
                 rendered: rendered
               });
             }
