@@ -24,15 +24,14 @@
     ]
   },
   "properties": {
-    "Program Name": {},
+    "Name": {},
     "Address1": {},
     "Address2": {},
     "City": {},
     "Zip": {},
-    "Provider Phone": {},
-    "eMailAddress": {},
-    "Capacity": {"title": "Capacity"},
-    "Program Type": {"title": "Program Type"}
+    "Phone": {},
+    "Opens": {"title":"Opens at"},
+    "Closes": {"title": "Closes at"},
   },
   "list": {
     "Program Name": {},
